@@ -1,4 +1,4 @@
-# Çoklu-Hedef Makine Öğrenmesi ve LLM Destekli Klinik Karar Destek Sistemi (CDSS)
+# MAKİNE ÖĞRENMESİ DESTEKLİ SAĞLIK RİSK ANALİZİ
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688?logo=fastapi)
