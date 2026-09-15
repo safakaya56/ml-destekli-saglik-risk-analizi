@@ -1,0 +1,66 @@
+{
+  "target": "diabetes",
+  "model_version": "xgboost-v1",
+  "sample_size": 8709,
+  "positive_cases": 893,
+  "features": [
+    "age",
+    "gender",
+    "bmi",
+    "height",
+    "weight",
+    "systolic_bp",
+    "diastolic_bp",
+    "glucose",
+    "hba1c",
+    "total_cholesterol",
+    "hdl",
+    "triglycerides",
+    "ldl",
+    "creatinine",
+    "bun",
+    "smoking",
+    "family_history_diabetes",
+    "family_history_cvd"
+  ],
+  "cv_results": {
+    "logistic_regression": {
+      "cv_roc_auc_mean": 0.9482876300641749,
+      "cv_roc_auc_std": 0.007277345431006422,
+      "cv_pr_auc_mean": 0.7499894827766127,
+      "cv_recall_mean": 0.8627105289077119
+    },
+    "random_forest": {
+      "cv_roc_auc_mean": 0.9529645141343833,
+      "cv_roc_auc_std": 0.007317349717282493,
+      "cv_pr_auc_mean": 0.7540293074560439,
+      "cv_recall_mean": 0.8529301684231262
+    },
+    "xgboost": {
+      "cv_roc_auc_mean": 0.9560236834560717,
+      "cv_roc_auc_std": 0.006457764911447783,
+      "cv_pr_auc_mean": 0.7739331423634771,
+      "cv_recall_mean": 0.8711316852161921
+    }
+  },
+  "best_model": "xgboost",
+  "test_metrics": {
+    "accuracy": 0.9018369690011481,
+    "precision": 0.5130718954248366,
+    "recall_sensitivity": 0.8770949720670391,
+    "specificity": 0.9046705054382598,
+    "f1_score": 0.6474226804123712,
+    "roc_auc": 0.9586706555578194,
+    "pr_auc": 0.8083926618800196,
+    "confusion_matrix": [
+      [
+        1414,
+        149
+      ],
+      [
+        22,
+        157
+      ]
+    ]
+  }
+}

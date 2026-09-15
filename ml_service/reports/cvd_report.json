@@ -1,0 +1,66 @@
+{
+  "target": "cvd",
+  "model_version": "logistic_regression-v1",
+  "sample_size": 5533,
+  "positive_cases": 691,
+  "features": [
+    "age",
+    "gender",
+    "bmi",
+    "height",
+    "weight",
+    "systolic_bp",
+    "diastolic_bp",
+    "glucose",
+    "hba1c",
+    "total_cholesterol",
+    "hdl",
+    "triglycerides",
+    "ldl",
+    "creatinine",
+    "bun",
+    "smoking",
+    "family_history_diabetes",
+    "family_history_cvd"
+  ],
+  "cv_results": {
+    "logistic_regression": {
+      "cv_roc_auc_mean": 0.8395329100361358,
+      "cv_roc_auc_std": 0.018298335563100326,
+      "cv_pr_auc_mean": 0.43566680426057386,
+      "cv_recall_mean": 0.7901719901719902
+    },
+    "random_forest": {
+      "cv_roc_auc_mean": 0.8269559041412006,
+      "cv_roc_auc_std": 0.017859655461599594,
+      "cv_pr_auc_mean": 0.393543907767889,
+      "cv_recall_mean": 0.690892710892711
+    },
+    "xgboost": {
+      "cv_roc_auc_mean": 0.8257384905330891,
+      "cv_roc_auc_std": 0.015359796183162463,
+      "cv_pr_auc_mean": 0.3915557820076014,
+      "cv_recall_mean": 0.7215724815724815
+    }
+  },
+  "best_model": "logistic_regression",
+  "test_metrics": {
+    "accuracy": 0.7416440831074977,
+    "precision": 0.3010752688172043,
+    "recall_sensitivity": 0.8115942028985508,
+    "specificity": 0.7316821465428277,
+    "f1_score": 0.4392156862745098,
+    "roc_auc": 0.8367994795172073,
+    "pr_auc": 0.3956743358768284,
+    "confusion_matrix": [
+      [
+        709,
+        260
+      ],
+      [
+        26,
+        112
+      ]
+    ]
+  }
+}

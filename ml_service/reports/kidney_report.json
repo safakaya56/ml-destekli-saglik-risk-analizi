@@ -1,0 +1,66 @@
+{
+  "target": "kidney",
+  "model_version": "logistic_regression-v1",
+  "sample_size": 5560,
+  "positive_cases": 223,
+  "features": [
+    "age",
+    "gender",
+    "bmi",
+    "height",
+    "weight",
+    "systolic_bp",
+    "diastolic_bp",
+    "glucose",
+    "hba1c",
+    "total_cholesterol",
+    "hdl",
+    "triglycerides",
+    "ldl",
+    "creatinine",
+    "bun",
+    "smoking",
+    "family_history_diabetes",
+    "family_history_cvd"
+  ],
+  "cv_results": {
+    "logistic_regression": {
+      "cv_roc_auc_mean": 0.8060327682985762,
+      "cv_roc_auc_std": 0.041126720704810854,
+      "cv_pr_auc_mean": 0.35405051398702747,
+      "cv_recall_mean": 0.6684126984126985
+    },
+    "random_forest": {
+      "cv_roc_auc_mean": 0.7829414334039626,
+      "cv_roc_auc_std": 0.0524042803270294,
+      "cv_pr_auc_mean": 0.25192333242261666,
+      "cv_recall_mean": 0.38666666666666666
+    },
+    "xgboost": {
+      "cv_roc_auc_mean": 0.7670504813947436,
+      "cv_roc_auc_std": 0.04623449088098661,
+      "cv_pr_auc_mean": 0.28445297704384226,
+      "cv_recall_mean": 0.5052380952380953
+    }
+  },
+  "best_model": "logistic_regression",
+  "test_metrics": {
+    "accuracy": 0.8264388489208633,
+    "precision": 0.14761904761904762,
+    "recall_sensitivity": 0.6888888888888889,
+    "specificity": 0.8322399250234301,
+    "f1_score": 0.24313725490196078,
+    "roc_auc": 0.8582318025616995,
+    "pr_auc": 0.5046786214670408,
+    "confusion_matrix": [
+      [
+        888,
+        179
+      ],
+      [
+        14,
+        31
+      ]
+    ]
+  }
+}

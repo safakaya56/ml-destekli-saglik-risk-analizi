@@ -1,0 +1,23 @@
+{
+  "features": [
+    "age",
+    "gender",
+    "bmi",
+    "height",
+    "weight",
+    "systolic_bp",
+    "diastolic_bp",
+    "glucose",
+    "hba1c",
+    "total_cholesterol",
+    "hdl",
+    "triglycerides",
+    "ldl",
+    "creatinine",
+    "bun",
+    "smoking",
+    "family_history_diabetes",
+    "family_history_cvd"
+  ],
+  "target": "target_diabetes"
+}
