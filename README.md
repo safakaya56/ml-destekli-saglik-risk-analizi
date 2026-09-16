@@ -54,7 +54,7 @@ Sistem mimarisinde, 3 bağımsız paralel **XGBoost Classifier** modeli eğitilm
 ### 📈 Grafiksel Değerlendirme ve Analizler
 
 <p align="center">
-  <img src="./docs/assets/charts/model_performance_comparison.png" width="85%" alt="Model Performans Karşılaştırması">
+  <img src="./docs/assets/charts/model_performance_comparison1.png" width="85%" alt="Model Performans Karşılaştırması">
   <br>
   <i>Şekil 1: Modellerin Karşılaştırmalı Başarım Grafiği</i>
 </p>
